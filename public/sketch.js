@@ -22,11 +22,11 @@ function sendOsc(address, value)
 
 function setupOsc(oscPortIn, oscPortOut) 
 {
-	var socket = io.connect('http://192.168.1.14:8081', { port: 8000, rememberTransport: false });
+	var socket = io.connect('http://192.168.1.11:8081', { port: 8000, rememberTransport: false });
 	socket.on('connect', function() {
 		socket.emit('config', {	
-			server: { port: oscPortIn,  host: '192.168.1.14'},
-			client: { port: oscPortOut, host: '192.168.1.14'}
+			server: { port: oscPortIn,  host: '192.168.1.11'},
+			client: { port: oscPortOut, host: '192.168.1.11'}
 		});
 	});
 	socket.on('message', function(msg) {
