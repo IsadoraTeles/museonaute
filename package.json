@@ -1,0 +1,27 @@
+{
+  "name": "museonaute",
+  "version": "1.0.0",
+  "description": "interactive project, communicating data between microcontroler and webapplication in three js and P5 js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsadoraTeles/museonaute.git"
+  },
+  "keywords": [
+    "sockets",
+    "museonaute"
+  ],
+  "author": "Isadora Teles de Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsadoraTeles/museonaute/issues"
+  },
+  "homepage": "https://github.com/IsadoraTeles/museonaute#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
