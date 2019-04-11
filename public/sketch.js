@@ -1,5 +1,5 @@
 
-const PORT = process.env.PORT || 8000;
+const PORT2 = process.env.PORT || 8000;
 
 // IO
 var socket;
@@ -23,7 +23,7 @@ function sendOsc(address, value)
 
 function setupOsc(oscPortIn, oscPortOut) 
 {
-	var socket = io.connect('http://192.168.1.11:PORT', { port: PORT, rememberTransport: false });
+	var socket = io.connect('http://192.168.1.11:' + string(PORT), { port: PORT2, rememberTransport: false });
 	socket.on('connect', function() {
 		socket.emit('config', {	
 			server: { port: oscPortIn,  host: '192.168.1.11'},
