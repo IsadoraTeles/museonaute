@@ -1,6 +1,8 @@
 
+const PORT = process.env.PORT || 8081;
+
 var osc = require('node-osc');
-var io = require('socket.io')(8081);
+var io = require('socket.io')(PORT);
 
 
 var oscServer, oscClient;
